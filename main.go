@@ -45,11 +45,40 @@ func updateUser ( u *User){
 		zip:"10001",
 	}
 }
+// map example
+
+var a = map [string]int{
+	"apple": 1,
+	"banana": 2,
+	"cherry": 3,
+}
+ var names = map [string] string {
+	"John": "Doe",
+	"Jane": "Doe",
+	"Jim": "Beam",
+ }
+ func updateNames(m *map[string]string){
+	(*m)["John"] = "Doe2"
+	(*m)["Jane"] = "Doe2"
+	(*m)["Jim"] = "Beam2"
+ }
+func updateMap(m map[string]int){
+	m["apple"] = 10
+	m["banana"] = 20
+	m["cherry"] = 30
+}
+
+
+
 
 
 func main(){ 
 
-
+     fmt.Println(a)
+	 fmt.Println(names)
+     updateNames(&names)
+     fmt.Println(names)
+    //  fmt.Println(a)
 
    person:= Person{
 	name:"Reazul Islam Reaz",
@@ -59,7 +88,7 @@ func main(){
 	role: "admin",
    }
    updateInfo(&person)
-   fmt.Println(person)
+//    fmt.Println(person)
 }
 
 	
