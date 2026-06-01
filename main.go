@@ -59,7 +59,7 @@ func main(){
 	role: "admin",
    }
    updateInfo(&person)
-//    fmt.Println(person)
+   fmt.Println(person)
 }
 
 	
